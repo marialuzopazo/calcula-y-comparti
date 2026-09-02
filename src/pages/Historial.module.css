@@ -1,0 +1,60 @@
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.etiquetaTipo {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.etiquetaHora {
+  background-color: rgba(62, 127, 224, 0.12);
+  color: var(--color-azul-texto);
+}
+
+.etiquetaProyecto {
+  background-color: rgba(232, 130, 30, 0.12);
+  color: var(--color-naranja-texto);
+}
+
+.etiquetaProducto {
+  background-color: rgba(245, 185, 64, 0.18);
+  color: var(--color-amarillo-texto);
+}
+
+.fecha {
+  color: var(--color-texto-suave);
+  font-size: 13px;
+  margin: 0;
+}
+
+.monto {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.vacio {
+  text-align: center;
+  color: var(--color-texto-suave);
+  padding: 40px 0;
+}
+
+.botonBorrar {
+  margin-top: 20px;
+}

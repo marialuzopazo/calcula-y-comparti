@@ -1,0 +1,124 @@
+.campo {
+  margin-bottom: 18px;
+}
+
+.etiqueta {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1.5px solid var(--color-borde);
+  font-size: 16px;
+  color: var(--color-texto);
+  background-color: var(--color-superficie);
+}
+
+.input:invalid {
+  border-color: var(--color-rojo);
+}
+
+.errorCampo {
+  color: var(--color-rojo-texto);
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.filaEtiqueta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botonPlantilla {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--color-azul-texto);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.tarjetaDescuento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-superficie);
+  border: 1.5px solid var(--color-borde);
+  border-radius: var(--radio-tarjeta);
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.textoDescuento {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0;
+}
+
+.subtextoDescuento {
+  color: var(--color-texto-suave);
+  font-size: 13px;
+  margin: 2px 0 0;
+}
+
+/* Switch accesible construido sobre un checkbox nativo */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.switchDeslizador {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-borde);
+  border-radius: 999px;
+  transition: background-color 0.15s ease;
+  pointer-events: none;
+}
+
+.switchDeslizador::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 3px;
+  top: 3px;
+  background-color: var(--color-superficie);
+  border-radius: 50%;
+  transition: transform 0.15s ease;
+}
+
+.switch input:checked + .switchDeslizador {
+  background-color: var(--color-teal-texto);
+}
+
+.switch input:checked + .switchDeslizador::before {
+  transform: translateX(20px);
+}
+
+.switch input:focus-visible + .switchDeslizador {
+  outline: 3px solid var(--color-azul);
+  outline-offset: 2px;
+}

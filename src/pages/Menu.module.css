@@ -1,0 +1,35 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.icono {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-texto-sobre-oscuro);
+  flex-shrink: 0;
+}
+
+.itemTitulo {
+  margin: 0 0 2px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.itemTexto {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-texto-suave);
+}
+
+.pie {
+  text-align: center;
+  color: var(--color-texto-suave);
+  font-size: 13px;
+  margin-top: 24px;
+}

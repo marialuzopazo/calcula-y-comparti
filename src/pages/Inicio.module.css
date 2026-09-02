@@ -1,0 +1,52 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--alto-nav) - 32px);
+  justify-content: center;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.titulo {
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.destacado {
+  color: var(--color-teal-texto);
+}
+
+.descripcion {
+  color: var(--color-texto-suave);
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.listaBeneficios {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--color-texto);
+}
+
+.puntoBeneficio {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

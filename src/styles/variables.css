@@ -1,0 +1,56 @@
+/*
+  Paleta inspirada en un dashboard financiero: fondo claro,
+  tarjetas azul marino para lo más importante y acentos de color
+  para categorías y estados.
+
+  Los tonos "vivo" (--color-*) se usan para fondos grandes, íconos
+  y detalles decorativos. Los tonos "-texto" son versiones más
+  oscuras de la misma familia, pensadas para usarse como texto o
+  ícono sobre fondo blanco: así se mantiene el contraste mínimo
+  4.5:1 que pide WCAG AA sin perder la identidad de color.
+*/
+:root {
+  /* Fondos */
+  --color-fondo: #f6f7fb;
+  --color-superficie: #ffffff;
+  --color-borde: #e3e6ee;
+
+  /* Azul marino: tarjetas destacadas (resultado, monto total) */
+  --color-oscuro: #0e1b3d;
+  --color-oscuro-claro: #17265a;
+
+  /* Texto */
+  --color-texto: #1a1d29;
+  --color-texto-suave: #5a5f72;
+  --color-texto-sobre-oscuro: #ffffff;
+  --color-texto-sobre-oscuro-suave: #b7bedb;
+
+  /* Acentos vivos (fondos grandes, íconos, decoración) */
+  --color-naranja: #e8821e;
+  --color-teal: #3fa796;
+  --color-azul: #3e7fe0;
+  --color-amarillo: #f5b940;
+  --color-rojo: #e2542f;
+
+  /* Acentos oscurecidos (uso como texto/ícono sobre blanco, AA) */
+  --color-naranja-texto: #a85a10;
+  --color-teal-texto: #1f7a6c;
+  --color-azul-texto: #2757a8;
+  --color-amarillo-texto: #8a6410;
+  --color-rojo-texto: #a3341a;
+
+  /* Fondos suaves para tarjetas de alerta/estado */
+  --color-teal-suave: #e4f5f2;
+  --color-rojo-suave: #fbeae6;
+  --color-amarillo-suave: #fdf3de;
+
+  /* Tipografía */
+  --fuente-titulos: 'Poppins', 'Inter', system-ui, sans-serif;
+  --fuente-texto: 'Inter', system-ui, sans-serif;
+
+  /* Otros */
+  --radio-tarjeta: 20px;
+  --radio-boton: 14px;
+  --sombra-suave: 0 4px 16px rgba(14, 27, 61, 0.08);
+  --alto-nav: 72px;
+}

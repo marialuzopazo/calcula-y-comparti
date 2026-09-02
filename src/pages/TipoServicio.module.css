@@ -1,0 +1,58 @@
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .opciones {
+    flex-direction: row;
+  }
+}
+
+.opcion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  background-color: var(--color-superficie);
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-tarjeta);
+  padding: 20px;
+  cursor: pointer;
+  font-family: var(--fuente-texto);
+  color: var(--color-texto);
+}
+
+.opcionSeleccionada {
+  border-color: var(--color-teal);
+  background-color: var(--color-teal-suave);
+}
+
+.opcionIcono {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-texto-sobre-oscuro);
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.opcionTitulo {
+  font-family: var(--fuente-titulos);
+  font-weight: 600;
+  font-size: 17px;
+  margin: 4px 0 0;
+}
+
+.opcionDescripcion {
+  color: var(--color-texto-suave);
+  font-size: 14px;
+  margin: 0;
+}

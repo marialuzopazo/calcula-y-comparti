@@ -1,0 +1,65 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-texto);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+}
+
+input:focus-visible,
+button:focus-visible,
+a:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-azul);
+  outline-offset: 2px;
+}
+
+.pantalla {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100%;
+  padding: 24px 20px calc(var(--alto-nav) + 32px);
+}
+
+@media (min-width: 768px) {
+  .pantalla {
+    max-width: 640px;
+    padding: 40px 32px calc(var(--alto-nav) + 40px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .pantalla {
+    max-width: 720px;
+    padding: 56px 32px calc(var(--alto-nav) + 48px);
+  }
+}

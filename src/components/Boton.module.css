@@ -1,0 +1,49 @@
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  border: none;
+  border-radius: var(--radio-boton);
+  padding: 15px 20px;
+  font-family: var(--fuente-titulos);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.15s ease;
+}
+
+.boton:active {
+  transform: scale(0.98);
+}
+
+.boton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.primario {
+  background-color: var(--color-oscuro);
+  color: var(--color-texto-sobre-oscuro);
+}
+
+.secundario {
+  background-color: var(--color-superficie);
+  color: var(--color-texto);
+  border: 1.5px solid var(--color-borde);
+}
+
+.teal {
+  /* Se usa la variante oscurecida del teal (no la vivída) para que el
+     texto blanco cumpla el contraste mínimo 4.5:1 (WCAG AA). */
+  background-color: var(--color-teal-texto);
+  color: var(--color-texto-sobre-oscuro);
+}
+
+.texto {
+  background: none;
+  color: var(--color-azul-texto);
+  padding: 10px;
+  width: auto;
+}

@@ -1,0 +1,50 @@
+.tarjeta {
+  position: relative;
+  border-radius: var(--radio-tarjeta);
+  padding: 24px;
+  box-shadow: var(--sombra-suave);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.clara {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  color: var(--color-texto);
+}
+
+.oscura {
+  background-color: var(--color-oscuro);
+  color: var(--color-texto-sobre-oscuro);
+}
+
+/* Manchas decorativas orgánicas, solo en la tarjeta oscura */
+.oscura::before,
+.oscura::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.12;
+  background-color: var(--color-teal);
+  pointer-events: none;
+}
+
+.oscura::before {
+  width: 160px;
+  height: 160px;
+  top: -60px;
+  right: -50px;
+}
+
+.oscura::after {
+  width: 100px;
+  height: 100px;
+  bottom: -40px;
+  left: -30px;
+  background-color: var(--color-naranja);
+}
+
+.contenido {
+  position: relative;
+  z-index: 1;
+}
