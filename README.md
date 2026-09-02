@@ -2,49 +2,22 @@
 
 Calculadora de presupuestos pensada para freelancers y prestadores de
 servicios: permite calcular cuánto cobrar por hora, por proyecto o por
-producto (ideal para reventa o emprendimientos gastronómicos/artesanales),
+producto (esta pensada principalmente para reventa o emprendimientos gastronómicos/artesanales),
 aplicar descuentos, detectar si un trabajo no es rentable y compartir el
 resultado con el cliente.
 
 Proyecto final de UX/UI llevado a código con React + Vite.
 
-## Cómo correrlo localmente
+<img width="1920" height="1080" alt="1920 X 1080 (1)" src="https://github.com/user-attachments/assets/8a4bca4e-aebe-433c-af26-6a4a818b72d6" />
 
-```bash
-npm install
-npm run dev
-```
+# portfolio ux de este proyecto
 
-Esto levanta la app en `http://localhost:5173`.
+link al portfolio de diseño: 
+https://www.behance.net/gallery/233159457/Portfolio-UX
+este trabajo fue realizado bajo un estudio completo de diseño ux ui 
+con metodologias scrum - entrevistas con emprendedores y freelancers que fueron 
+una parte fundamental para el proyecto y su validación. 
 
-Otros scripts disponibles:
-
-- `npm run build`: genera la versión de producción en `dist/`.
-- `npm run preview`: sirve localmente el build de producción para probarlo.
-- `npm run lint`: corre el linter (oxlint) sobre el código.
-
-## Cómo desplegarlo en Vercel
-
-1. Subí este proyecto a un repositorio de GitHub.
-2. En [Vercel](https://vercel.com), hacé clic en "Add New Project" e importá
-   ese repositorio.
-3. Vercel detecta automáticamente que es un proyecto Vite y usa `npm run
-   build` como comando de build y `dist` como carpeta de salida. No hace
-   falta configurar nada más ni cargar variables de entorno: la app es
-   100% front-end.
-4. Confirmá el despliegue y listo.
-
-## Estructura del proyecto
-
-```
-src/
-  components/   -> componentes reutilizables (Botón, Tarjeta, Navegación, etc.)
-  pages/        -> una pantalla por archivo (Inicio, TipoServicio, DatosProyecto, Resultado, Historial, Menú)
-  hooks/        -> lógica reutilizable (useCalculo, useCalculoPresupuesto)
-  context/      -> estado compartido entre pantallas del flujo de cálculo
-  utils/        -> funciones puras (cálculos, formato de moneda, validaciones)
-  data/         -> plantillas de valores típicos sugeridos
-```
 
 ## Notas y decisiones tomadas
 
