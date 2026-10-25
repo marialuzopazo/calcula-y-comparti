@@ -15,6 +15,9 @@
   --color-superficie: #ffffff;
   --color-borde: #e3e6ee;
 
+  /* Azul del logo de Estructura de Impacto */
+  --color-logo: #1082c2;
+
   /* Azul marino: tarjetas destacadas (resultado, monto total) */
   --color-oscuro: #0e1b3d;
   --color-oscuro-claro: #17265a;

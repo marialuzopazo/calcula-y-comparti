@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Encabezado } from '../components/Encabezado'
 import { Boton } from '../components/Boton'
-import { IconoVarita } from '../components/Iconos'
 import { useCalculo } from '../hooks/useCalculo'
 import { validarDatosProyecto } from '../utils/validacion'
-import { plantillas } from '../data/plantillas'
 import estilos from './DatosProyecto.module.css'
 
 export function DatosProyecto() {
@@ -20,11 +18,6 @@ export function DatosProyecto() {
       navegar('/tipo-servicio', { replace: true })
     }
   }, [datos.tipoServicio, navegar])
-
-  function handleUsarPlantilla() {
-    actualizarDatos(plantillas[datos.tipoServicio])
-    setErrores({})
-  }
 
   function handleContinuar(evento) {
     evento.preventDefault()
@@ -45,11 +38,6 @@ export function DatosProyecto() {
         mostrarAtras
         rutaAtras="/tipo-servicio"
       />
-
-      <button type="button" className={estilos.botonPlantilla} onClick={handleUsarPlantilla}>
-        <IconoVarita width={16} height={16} />
-        Usar plantilla con valores típicos
-      </button>
 
       <form onSubmit={handleContinuar} noValidate>
         {datos.tipoServicio === 'hora' ? (

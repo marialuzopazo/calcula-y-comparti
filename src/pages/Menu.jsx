@@ -1,15 +1,9 @@
 import { Encabezado } from '../components/Encabezado'
 import { Tarjeta } from '../components/Tarjeta'
-import { IconoReloj, IconoAlerta, IconoVarita } from '../components/Iconos'
+import { IconoReloj, IconoAlerta, IconoMensaje } from '../components/Iconos'
 import estilos from './Menu.module.css'
 
 const itemsAyuda = [
-  {
-    Icono: IconoVarita,
-    color: 'var(--color-azul)',
-    titulo: 'Plantillas',
-    texto: 'Si no sabés qué valores cargar, usá el botón "Usar plantilla" en la carga de datos.',
-  },
   {
     Icono: IconoAlerta,
     color: 'var(--color-rojo)',
@@ -43,7 +37,32 @@ export function Menu() {
         </Tarjeta>
       ))}
 
-      <p className={estilos.pie}>Calculá y Compartí · Proyecto final de UX/UI</p>
+      <a
+        className={estilos.enlace}
+        href="https://www.instagram.com/estructura.deimpacto/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Tarjeta>
+          <div className={estilos.item}>
+            <span className={estilos.icono} style={{ backgroundColor: 'var(--color-logo)' }}>
+              <IconoMensaje width={20} height={20} />
+            </span>
+            <div>
+              <p className={estilos.itemTitulo}>Sugerencias y reportes</p>
+              <p className={estilos.itemTexto}>
+                ¿Querés proponer un cambio o encontraste un error de cálculo? Escribinos por
+                Instagram: @estructura.deimpacto
+              </p>
+            </div>
+          </div>
+        </Tarjeta>
+      </a>
+
+      <p className={estilos.pie}>
+        Calculá y Compartí, plataforma simple y gratuita realizada por Estudio Estructura de
+        Impacto
+      </p>
     </div>
   )
 }

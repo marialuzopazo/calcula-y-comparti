@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { CalculoContext, datosIniciales } from './calculoContext'
 
-// Comparte los datos del cálculo entre las pantallas del flujo por
-// contexto, para no tener que pasarlos a mano por cada ruta.
 export function CalculoProvider({ children }) {
   const [datos, setDatos] = useState(datosIniciales)
 

@@ -92,3 +92,11 @@ export function IconoFlechaAtras(props) {
     </svg>
   )
 }
+
+export function IconoMensaje(props) {
+  return (
+    <svg {...propsBase} {...props}>
+      <path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12Z" />
+    </svg>
+  )
+}

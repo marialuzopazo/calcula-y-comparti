@@ -1,23 +1,20 @@
 # Calculá y Compartí
 
-Calculadora de presupuestos pensada para freelancers y prestadores de
-servicios: permite calcular cuánto cobrar por hora, por proyecto o por
-producto (esta pensada principalmente para reventa o emprendimientos gastronómicos/artesanales),
+Calculadora de presupuestos pensada para trabajadores independientes:
+esta plataforma te permite calcular cuánto cobrar por hora, por proyecto o por
+producto (esta pensada principalmente para reventa o emprendimientos relacionados a servicios),
 aplicar descuentos, detectar si un trabajo no es rentable y compartir el
 resultado con el cliente.
 
 Proyecto final de UX/UI llevado a código con React + Vite.
 
-<img width="1920" height="1080" alt="1920 X 1080 (1)" src="https://github.com/user-attachments/assets/8a4bca4e-aebe-433c-af26-6a4a818b72d6" />
+# ux de este proyecto
 
-# portfolio ux de este proyecto
-
-link al portfolio de diseño: 
+link al portfolio de diseño:
 https://www.behance.net/gallery/233159457/Portfolio-UX
-este trabajo fue realizado bajo un estudio completo de diseño ux ui 
-con metodologias scrum - entrevistas con emprendedores y freelancers que fueron 
-una parte fundamental para el proyecto y su validación. 
-
+este trabajo fue realizado bajo un estudio completo de diseño ux ui
+con metodologias scrum - entrevistas con emprendedores y freelancers que fueron
+una parte fundamental para el proyecto y su validación. ( a quienes fueron parte: gracias !)
 
 ## Notas y decisiones tomadas
 

@@ -35,19 +35,6 @@
   align-items: center;
 }
 
-.botonPlantilla {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: none;
-  border: none;
-  color: var(--color-azul-texto);
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 4px 0;
-}
-
 .tarjetaDescuento {
   display: flex;
   justify-content: space-between;

@@ -21,15 +21,15 @@ export function Inicio() {
   return (
     <div className={`pantalla ${estilos.contenedor}`}>
       <img
-        src="/pollito.png"
-        alt="Pollito con anteojos sosteniendo una calculadora, mascota de Calculá y Compartí"
+        src="/logo-estructura.png"
+        alt="Logo de Estructura de Impacto: una figura humana con los brazos en alto rodeada de círculos concéntricos"
         className={estilos.logo}
       />
       <h1 className={estilos.titulo}>
-        Calculá y <span className={estilos.destacado}>Compartí</span>
+        Calculá y Compartí
       </h1>
       <p className={estilos.descripcion}>
-        La calculadora de presupuestos para freelancers: definí cuánto cobrar,
+        La calculadora de presupuestos: definí cuánto cobrar,
         revisá tu rentabilidad y compartilo con tu cliente en segundos.
       </p>
       <ul className={estilos.listaBeneficios}>
