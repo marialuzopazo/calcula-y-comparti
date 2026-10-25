@@ -6,7 +6,8 @@ producto (esta pensada principalmente para reventa o emprendimientos relacionado
 aplicar descuentos, detectar si un trabajo no es rentable y compartir el
 resultado con el cliente.
 
-Proyecto final de UX/UI llevado a código con React + Vite.
+<img width="3780" height="1890" alt="Agregar un subtítulo" src="https://github.com/user-attachments/assets/4f8cd07a-3f30-4adb-a9cc-32ca39c65072" />
+
 
 # ux de este proyecto
 
